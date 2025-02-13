@@ -1,0 +1,14 @@
+{
+    "welcome": "Welcome to our website!",
+    "description": "This is a simple multi-language website using React and Tailwind CSS.",
+    "change_language": "Switch to Arabic",
+       "name": "Vite + React",
+       
+        "tasks": {
+          "task1": "Buy groceries",
+          "task2": "Complete React project",
+          "task3": "Read a book"
+        }
+    
+  }
+  
