@@ -1,12 +1,66 @@
-{
-    "welcome": "مرحبًا بك في موقعنا!",
-    "description": "هذا موقع متعدد اللغات باستخدام React و Tailwind CSS.",
-    "change_language": "التبديل إلى الإنجليزية",
-    "name": "محمحسؤصحؤوكثصؤ",
-    "tasks": {
-    "task1": "شراء البقالة",
-    "task2": "إكمال مشروع React",
-    "task3": "قراءة كتاب"
-  }
+{ "change_language": "   ENG",
+
+  "footer": {
+    "About-the-College": {
+      "About": "عن الكلية",
+      "Establishmen": "تأسيس الكلية",
+      "Logo": "شعار الكلية",
+      "Vision": "رؤية الكلية",
+      "Mission": "رسالة الكلية"
+    },
+    "College-Administration": {
+      "Administration": "إدارة الكلية",
+      "Dean": "عميد الكلية",
+      "Agents": "وكلاء الكلية",
+      "Council": "مجلس الكلية",
+      "Director": "مدير الكلية"
+    },
+    "Contact Us": {
+      "Contact": "اتصل بنا",
+      "Phone": "0842145732",
+      "Fax": "0842145731",
+      "Email": "coinf@fayoum.edu.eg"
+    }
+  },
+
+  "sliders":{
+    
+      "news": {
+        "lecture": "جدول المحاضرات للفصل الدراسى الثانى للبرنامج الخاص والإرشاد العام لجميع الفرق",
+        "postgraduate": "استمرار اعمال امتحانات الفصل الدراسى الاول لمرحلة الدراسات العليا.",
+        "first_semester": "استمرار اعمال امتحانات الفصل الدراسى الاول.",
+        "art": "معرض سحر الحرف والفنون الأول",
+        "theater": "حاسبات تشارك في مهرجان المسرح الخامس عشر للعروض القصيرة.",
+        "college": "مجلس الكلية يكرم الاستاذ الدكتور مصطفى ربيع.",
+        "competition": "إبطال حاسبات الفيوم -- ساعات ما قبل المسابقة على مستوى العرب."
+      }
+    
+    
+  },
+  "CardHome":{
+    "important_links": {
+      "important_links": "الروابط المهمة",
+      "research_topics": "الموضوعات البحثية",
+      "electronic_survey": "الاستبيان الإلكتروني",
+      "study_agenda": "الأجندة الدراسية",
+      "guides": "أدلة",
+      "college_library": "مكتبة الكلية",
+      "email_portal": "بوابة البريد الإلكتروني",
+      "employment_forum": "الملتقى التوظيفي السنوي",
+      "yearly_schedule": "جدول أعمال السنة"
+    },
+    "units_centers": {
+      "units_centers": "وحدات الدراسات",
+      "crisis_unit": "وحدة الأزمات والكوارث",
+      "graduates_unit": "وحدة متابعة الخريجين",
+      "curriculum_dev_unit": "وحدة تطوير تدريس المقررات (وحدات سابقة)"
+    },
+    "agencies": {
+      "agencies": "وكالات",
+      "education_affairs": "وكالة شؤون التعليم والطلب",
+      "graduate_studies" : "وكالة الدراسات العليا",
+      "community_service": "وكالة خدمة المجتمع وتنمية البيئة"
+    }
   }
   
+}

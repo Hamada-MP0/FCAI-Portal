@@ -1,14 +1,64 @@
 {
-    "welcome": "Welcome to our website!",
-    "description": "This is a simple multi-language website using React and Tailwind CSS.",
-    "change_language": "Switch to Arabic",
-       "name": "Vite + React",
-       
-        "tasks": {
-          "task1": "Buy groceries",
-          "task2": "Complete React project",
-          "task3": "Read a book"
-        }
-    
+  "change_language": "  ARB",
+  "name": "Arabic Name",
+  "footer": {
+    "About-the-College": {
+      "About":"About the College",
+      "Establishmen": "College Establishment " ,
+      "Logo": "College Logo",
+      "Vision": "College Vision",
+      "Mission":  "College Mission"
+    },
+    "College-Administration": {
+      "Administration":"College Administration",
+      "Dean":"Dean of the College",
+      "Agents": "College Agents",
+      "Council": "College Council",
+      "Director": "College Director"
+    },
+    "Contact Us": {
+      "Contact":"Contact",
+      "Phone": "0842145732",
+      "Fax": "0842145731",
+      "Email": "coinf@fayoum.edu.eg"
+    }
+  },
+  "sliders":{
+    "news": {
+      "lecture": "Lecture schedule for the second semester of the special program and general guidance for all levels",
+      "postgraduate": "Continuation of first semester exams for postgraduate studies.",
+      "first_semester": "Continuation of first semester exams.",
+      "art": "\"The First Magic of Letters and Arts\" Exhibition",
+      "theater": "Computing department participates in the 15th Short Play Theater Festival.",
+      "college": "The college council honors Professor Dr. Mostafa Rabie.",
+      "competition": "Fayoum Computing Team disqualified -- hours before the competition at the Arab level."
+    }
+  },
+  "CardHome":
+  {
+    "important_links": {
+      "important_links": "Important Links",
+      "research_topics": "Research Topics",
+      "electronic_survey": "Electronic Survey",
+      "study_agenda": "Study Agenda",
+      "guides": "Guides",
+      "college_library": "College Library",
+      "email_portal": "Email Portal",
+      "employment_forum": "Annual Employment Forum",
+      "yearly_schedule": "Yearly Work Schedule"
+    },
+    "units_centers": {
+      "units_centers": "Units Centers",
+      "crisis_unit": "Crisis and Disaster Unit",
+      "graduates_unit": "Graduate Follow-up Unit",
+      "curriculum_dev_unit": "Curriculum Development Unit (Previous Units)"
+    },
+    "agencies": {
+      "agencies": "Agencies",
+      "education_affairs": "Education and Student Affairs Agency",
+      "graduate_studies": "Graduate Studies Agency",
+      "community_service": "Community Service and Environmental Development Agency"
+    }
   }
   
+}

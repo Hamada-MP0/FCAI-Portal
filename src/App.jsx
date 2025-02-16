@@ -1,25 +1,39 @@
 
-import DarkMode from './component/dark&light/DarkMode'
-import BtnLanguage from './component/Button/BtnLanguage'
-import { useTranslation } from "react-i18next";
 
+import AOS from 'aos';
+import { useEffect } from "react";
+import "aos/dist/aos.css";
+import Footer from './component/Footer/Footer';
+import Home from './pages/Home/Home';
+import { BrowserRouter , Routes , Route } from 'react-router-dom';
+import Header from './component/Header/Header';
 function App() {
-  const { t } = useTranslation();
+  useEffect(() => {
+    AOS.init({
+      duration: 3000, // مدة الحركة بالمللي ثانية
+      easing: "ease-in-out", // نوع الحركة
+      once: false, // تشغيل الحركة مرة واحدة فقط  
 
+      mirror: true, // ✅ يسمح للحركة بالعمل عند الصعود للأعلى
+      offset: 50,
+    });
+  }, []);
 
   return (
     <>
-    <div className="text-3xl font-bold bg-red-500 dark:bg-white dark:text-black">
-      <DarkMode/>
-      <BtnLanguage/>
-     <h1>{t("welcome")}</h1>
-      <p>{t("description")}</p>
-      {/* ... */}
-      <h1>{t("name")}</h1>
-      <h1>{t("tasks.task1")}</h1><h1>{t("tasks.task2")}</h1><h1>{t("tasks.task3")}</h1>
-    </div>
+ <BrowserRouter>
+        <Header/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<h1>About</h1>}/>
+        <Route path='/contact_us' element={<h1>Contact</h1>}/>
+        <Route path='/library' element={<h1>library</h1>}/>
+      </Routes>
+        <Footer/>
+    </BrowserRouter>
     </>
   )
 }
 
 export default App
+
