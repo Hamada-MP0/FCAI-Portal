@@ -1,23 +1,21 @@
-
-import DarkMode from './component/dark&light/DarkMode'
-import BtnLanguage from './component/Button/BtnLanguage'
-import { useTranslation } from "react-i18next";
+import { BrowserRouter , Routes , Route } from 'react-router-dom';
+import Header from './component/Header/Header';
+import Footer from './component/Footer/Footer';
+import Home from './pages/Home/Home';
 
 function App() {
-  const { t } = useTranslation();
-
-
   return (
     <>
-    <div className="text-3xl font-bold bg-red-500 dark:bg-white dark:text-black">
-      <DarkMode/>
-      <BtnLanguage/>
-     <h1>{t("welcome")}</h1>
-      <p>{t("description")}</p>
-      {/* ... */}
-      <h1>{t("name")}</h1>
-      <h1>{t("tasks.task1")}</h1><h1>{t("tasks.task2")}</h1><h1>{t("tasks.task3")}</h1>
-    </div>
+    <BrowserRouter>
+        <Header/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<h1>About</h1>}/>
+        <Route path='/contact_us' element={<h1>Contact</h1>}/>
+        <Route path='/library' element={<h1>library</h1>}/>
+      </Routes>
+        <Footer/>
+    </BrowserRouter>
     </>
   )
 }

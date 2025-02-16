@@ -19,12 +19,12 @@ const DarkMode = () => {
   }, [theme]);
 
   return (
-    <div className="relative">
+    <div className="relative w-28">
       <img
         src={LightButton}
         alt=""
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-        className={`w-12 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300 absolute left-0 z-10 ${
+        className={`w-28 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300 absolute left-0 z-10 ${
           theme === "dark" ? "opacity-0" : "opacity-100"
         } `}
       />
@@ -32,7 +32,7 @@ const DarkMode = () => {
         src={DarkButton}
         alt=""
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-        className="w-12 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300"
+        className="w-28 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300"
       />
     </div>
   );
