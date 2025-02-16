@@ -1,6 +1,6 @@
 import {useState,useEffect} from "react";
-import LightButton from "../../assets/dark&light icon/light-mode-button.png";
-import DarkButton from "../../assets/dark&light icon/dark-mode-button.png";
+
+import { Sun, Moon } from "lucide-react";
 const DarkMode = () => {
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
@@ -19,21 +19,14 @@ const DarkMode = () => {
   }, [theme]);
 
   return (
-    <div className="relative">
-      <img
-        src={LightButton}
-        alt=""
-        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-        className={`w-12 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300 absolute left-0 z-10 ${
-          theme === "dark" ? "opacity-0" : "opacity-100"
-        } `}
-      />
-      <img
-        src={DarkButton}
-        alt=""
-        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-        className="w-12 cursor-pointer drop-shadow-[1px_1px_1px_rgba(0,0,0,0.1)] transition-all duration-300"
-      />
+    <div  data-aos="fade-up"
+    data-aos-delay={ 900 } className="relative">
+<button
+  onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+  className="w-12 h-12 flex items-center justify-center bg-transparent border-none cursor-pointer transition-all duration-300"
+>
+  {theme === "light" ? <Sun size={25} /> : <Moon size={25} />}
+</button>
     </div>
   );
 };
