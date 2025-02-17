@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-// استيراد الصور
+
 import Image7 from "../../assets/image/1203951.jpg";
 import Image6 from "../../assets/image/1203971.jpg";
 import Image5 from "../../assets/image/1204291.jpg";
@@ -43,23 +43,23 @@ const Heroslider = () => {
           slidesPerView={"auto"}
           coverflowEffect={{
             rotate: 40,  
-            stretch: 50, // مدى تباعد الشرائح
+            stretch: 70, // مدى تباعد الشرائح
             depth: 2000, // عمق التأثير ثلاثي الأبعاد
             modifier: 1, // التحكم في التأثير
             slideShadows: true, // تمكين الظلال
           }}
           pagination={{ clickable: true }}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
           loop={true} 
           modules={[EffectCoverflow, Pagination, Autoplay]}
           className="w-full max-w-[100%] sm:max-w-[800px] md:max-w-[1500px] "
           data-aos="zoom-in-down"
         >
           {ImageList.map((data) => (
-            <SwiperSlide key={data.id} className="w-[250px] sm:w-[300px]  lg:w-[400px]">
+            <SwiperSlide key={data.id} className="w-[250px] sm:w-[300px]  lg:w-[600px]">
               <div  data-aos="pop-up" className="flex flex-col justify-center items-center">
                 {/* النص */}
-                <div className="flex justify-center  items-center text-center  relative leading-6 z-10 bg-red-600/30 rounded-lg sm:h-[150px] lg:w-[600px] w-[250px] h-[100px]  shadow-lg">
+                <div className="flex justify-center  items-center text-center  relative leading-6 z-10 bg-red-600/30 rounded-lg sm:h-[150px] lg:w-[700px] w-[250px] h-[100px]  shadow-lg">
                   <p className=" lg:text-2xl  sm:text-lg text-[13px] font-[Open_Sans] ... font-[500]  mx-4">{data.description}</p>
                 </div>
 
@@ -68,7 +68,7 @@ const Heroslider = () => {
                   <img
                     src={data.img}
                     alt="Slider Image"
-                    className="w-full h-[250px] sm:h-[350px] object-cover rounded-lg shadow-lg"
+                    className="w-full h-[250px] lg:w-[700px] sm:h-[350px] object-cover rounded-lg shadow-lg"
                   />
                 </div>
               </div>
@@ -76,7 +76,6 @@ const Heroslider = () => {
           ))}
         </Swiper>
       </div>
-      <div data-aos="zoom-in-up" className=" dark:bg-red-950 absolute w-[800px] h-[600px] mt-3 top-[0px]  right-[50%]] bg-red-500/10 rounded-full overflow-hidden"></div>
 
     </div>
   );

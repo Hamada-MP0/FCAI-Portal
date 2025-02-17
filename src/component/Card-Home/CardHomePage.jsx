@@ -33,11 +33,11 @@ const Card_Home = () => {
     const isArabic = i18n.language === "ar";
 
     return (
-        <div>
+        <div className="my-10">
             <div className={`grid w-full gap-5 lg:grid-cols-2 relative flex-wrap ${isArabic ? "rtl" : ""}`}>
-                
+    
                 <div    data-aos="fade-down"
-                                    data-aos-delay={ 300 }  className=" p-[10px] m-5 w-[90%] bg-slate-900/60 rounded-[20px] p-[10px]">
+                                    data-aos-delay={ 300 }  className="m-5 w-[90%] bg-red-200 rounded-[20px] p-[10px]">
                     <h2 className=" lg:text-[35px] text-[25px] text-center font-bold">
                         {t("CardHome.important_links.important_links")}
                     </h2>
@@ -54,7 +54,7 @@ const Card_Home = () => {
                 <div  className="grid m-5 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2  mx-[10px] gap-5 ">
                     {Object.keys(optionscard2).map((card, index) => (
                         <div  data-aos="fade-down"
-                        data-aos-delay={ 900*index } key={index} className="bg-gray-700 text-white rounded-[20px] p-5 h-full flex flex-col justify-between">
+                        data-aos-delay={ 900*index } key={index} className="bg-red-200 text-white rounded-[20px] p-5 h-full flex flex-col justify-between">
                             <h2 className="lg:text-[30px] text-xl font-bold text-center mb-3">
                                 {t(`CardHome.${card}.${optionscard2[card][0]}`)}
                             </h2>

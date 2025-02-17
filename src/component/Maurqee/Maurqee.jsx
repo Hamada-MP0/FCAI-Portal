@@ -18,7 +18,7 @@ const Maurqee = () => {
       </div>
 
       <div>
-        <Marquee direction="right" speed={100} delay={0}>
+        <Marquee direction="right" speed={100} delay={0}   pauseOnHover={true}>
           <div className="image_wrapper">
             <img src={img1} alt="" />
           </div>
