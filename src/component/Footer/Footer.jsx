@@ -45,7 +45,7 @@ const Footer = () => {
               height="250"
               className="border-none rounded-lg"
               allowFullScreen
-              loading="lazy"
+              loading="lazy"//يجعل تحميل الخريطة يحدث فقط عندما تظهر في الشاشة، مما يحسن من أداء الصفحة.
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
