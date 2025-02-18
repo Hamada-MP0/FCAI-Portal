@@ -30,12 +30,12 @@ const Heroslider = () => {
   ];
 
   return (
-    <div className="relative    min-h-[550px] sm:min-h-[650px] bg-gray-950/15 flex justify-center items-center dark:bg-gray-950/90 dark:text-white duration-200">
+    <div className="relative    min-full h-full  sm:min-h-[1000px] bg-gray-950/15 flex justify-center items-center dark:bg-gray-950/90 dark:text-white duration-200">
       {/* خلفية */} 
       {/* <div className="absolute w-[700px] h-[700px] rotate-[40deg] top-[-300px] right-[50px] bg-red-500 opacity-30 rounded-full overflow-hidden"></div> */}
 
       {/* محتوى الصفحة */}
-      <div className="container">
+      <div className="container w-[100%]">
         <Swiper
           effect="coverflow"
           grabCursor={true}
@@ -43,24 +43,24 @@ const Heroslider = () => {
           slidesPerView={"auto"}
           coverflowEffect={{
             rotate: 40,  
-            stretch: 70, // مدى تباعد الشرائح
-            depth: 2000, // عمق التأثير ثلاثي الأبعاد
-            modifier: 1, // التحكم في التأثير
+            stretch: 30, // مدى تباعد الشرائح
+            depth: 2500, // عمق التأثير ثلاثي الأبعاد
+            modifier: 6, // التحكم في التأثير
             slideShadows: true, // تمكين الظلال
           }}
           pagination={{ clickable: true }}
           autoplay={{ delay: 2000, disableOnInteraction: false }}
           loop={true} 
           modules={[EffectCoverflow, Pagination, Autoplay]}
-          className="w-full max-w-[100%] sm:max-w-[800px] md:max-w-[1500px] "
+          className="w-full max-w-[100%] sm:w-[1500px] md:max-w-[1500px] "
           data-aos="zoom-in-down"
         >
           {ImageList.map((data) => (
-            <SwiperSlide key={data.id} className="w-[250px] sm:w-[300px]  lg:w-[600px]">
+            <SwiperSlide key={data.id} className="lg:h[100%] w-[250px] sm:w-[300px]  lg:w-[100%] pb-8">
               <div  data-aos="pop-up" className="flex flex-col justify-center items-center">
                 {/* النص */}
-                <div className="flex justify-center  items-center text-center  relative leading-6 z-10 bg-red-600/30 rounded-lg sm:h-[150px] lg:w-[700px] w-[250px] h-[100px]  shadow-lg">
-                  <p className=" lg:text-2xl  sm:text-lg text-[13px] font-[Open_Sans] ... font-[500]  mx-4">{data.description}</p>
+                <div className="flex justify-center  items-center text-center  relative leading-6 z-10 bg-red-600/30 rounded-lg sm:h-[150px] lg:w-[1500px] w-[250px] h-[100px]  shadow-lg">
+                  <p className=" lg:text-2xl  sm:text-lg text-[13px]  font-[500]  mx-4">{data.description}</p>
                 </div>
 
                 {/* الصورة */}
@@ -68,9 +68,10 @@ const Heroslider = () => {
                   <img
                     src={data.img}
                     alt="Slider Image"
-                    className="w-full h-[250px] lg:w-[700px] sm:h-[350px] object-cover rounded-lg shadow-lg"
+                    className="w-full object-cover h-[300px] lg:w-[150vw] sm:h-[350px] lg:h-[700px] object-cover rounded-lg shadow-lg"
                   />
                 </div>
+
               </div>
             </SwiperSlide>
           ))}
