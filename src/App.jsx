@@ -8,6 +8,8 @@ import Home from './pages/Home/Home';
 import { BrowserRouter , Routes , Route } from 'react-router-dom';
 import Header from './component/Header/Header';
 import About from './pages/about/About';
+import ContactUs from './pages/ContactUS/ContactUs';
+import Report from './pages/Report/Report';
 function App() {
   useEffect(() => {
     AOS.init({
@@ -27,7 +29,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
-        <Route path='/contact_us' element={<h1>Contact</h1>}/>
+        <Route path='/contact_us' element={<ContactUs/>}/>
+        <Route path='/reports' element={<Report/>}/>
         <Route path='/library' element={<h1>library</h1>}/>
       </Routes>
         <Footer/>
