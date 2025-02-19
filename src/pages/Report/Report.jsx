@@ -1,12 +1,55 @@
 import { useState } from "react";
 
 const Report = () => {
+  // Add state for form inputs
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  // Handle input changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    // Check if any field is empty
+    const emptyFields = Object.entries(formData).filter(([ value]) => !value.trim());
+    
+    if (emptyFields.length > 0) {
+      alert('Please fill in all fields before submitting');
+      return;
+    }
+
+    // If all fields are filled, show success message
+    alert('Your report has been submitted successfully!');
+    
+    // Reset form
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
+  };
+
   return (
     <div>
-      <div data-aos="fade-right" className="relative flex  flex-col top-0 justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
+      <div data-aos="fade-right" className="relative flex flex-col top-0 justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
         <div className="bg-white relative top-0 h-full mx-auto w-full">
           <div className="grid gap-2 grid-cols-6 h-full">
-            <div className="bg-blue-900 p-10 col-span-2">
+            <div className="bg-blue-900 dark:bg-[#1E2935] p-10 col-span-2">
               <h2 className="mb-10 font-bold text-2xl text-blue-100 before:block before:absolute before:bg-sky-300 before:content[''] relative before:w-20 before:h-1 before:-skew-y-3 before:-bottom-4">Info Contact</h2>
               <p className="font-bold text-blue-100 py-8 border-b border-blue-700">
                 Location Address
@@ -26,29 +69,66 @@ const Report = () => {
               </p>
 
             </div>
-            <div className="bg-blue-200 p-14 col-span-4">
-              <h2 className="mb-14 font-bold text-4xl text-blue-900 before:block before:absolute before:bg-sky-300 before:content[''] relative before:w-20 before:h-1 before:-skew-y-3 before:-bottom-4">Share your Report</h2>
+            <div className="bg-blue-200 dark:bg-[#0D141F] p-14 col-span-4">
+              <h2 className="mb-14 font-bold text-4xl text-blue-900 dark:text-white before:block before:absolute before:bg-sky-300 before:content[''] relative before:w-20 before:h-1 before:-skew-y-3 before:-bottom-4">Share your Report</h2>
               <div className="grid gap-6 mb-6 grid-cols-2">
                 <div className="flex flex-col">
-                  <input className="py-4 bg-white rounded-full px-6 placeholder:text-xs"  placeholder="first name" />
+                  <input 
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    className="py-4 bg-white dark:bg-[#28333F] dark:text-white rounded-full px-6 placeholder:text-xs"  
+                    placeholder="first name" 
+                  />
                 </div>
                 <div className="flex flex-col">
-                  <input className="py-4 bg-white rounded-full px-6 placeholder:text-xs"  placeholder="last name" />
+                  <input 
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    className="py-4 bg-white dark:bg-[#28333F] dark:text-white rounded-full px-6 placeholder:text-xs"  
+                    placeholder="last name" 
+                  />
                 </div>
               </div>
               <div className="grid gap-6 mb-6 grid-cols-2">
                 <div className="flex flex-col">
-                  <input className="py-4 bg-white rounded-full px-6 placeholder:text-xs"  placeholder="Email Adresse" />
+                  <input 
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="py-4 bg-white dark:bg-[#28333F] dark:text-white rounded-full px-6 placeholder:text-xs"  
+                    placeholder="Email Address" 
+                  />
                 </div>
                 <div className="flex flex-col">
-                  <input className="py-4 bg-white rounded-full px-6 placeholder:text-xs"  placeholder="Subject" />
+                  <input 
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    className="py-4 bg-white dark:bg-[#28333F] dark:text-white rounded-full px-6 placeholder:text-xs"  
+                    placeholder="Subject" 
+                  />
                 </div>
               </div>
               <div className="mb-6">
-                <textarea className="w-full rounded-2xl placeholder:text-xs px-6 py-4" placeholder="plase write your report here" rows="8"></textarea>
+                <textarea 
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="w-full rounded-2xl dark:bg-[#28333F] dark:text-white placeholder:text-xs px-6 py-4" 
+                  placeholder="please write your report here" 
+                  rows="8"
+                ></textarea>
               </div>
               <div className="flex justify-center">
-                <button className="rounded-full bg-blue-900 text-white font-bold py-4 px-6 min-w-40 hover:bg-blue-800 transition-all">submit</button>
+                <button 
+                  onClick={handleSubmit} 
+                  className="rounded-full bg-blue-900 text-white font-bold py-4 px-6 min-w-40 hover:bg-blue-800 transition-all"
+                >
+                  Submit
+                </button>
               </div>
             </div>
           </div>
@@ -192,3 +272,4 @@ const AccordionItem = ({ header, text }) => {
     </div>
   );
 };
+

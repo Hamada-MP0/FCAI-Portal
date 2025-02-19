@@ -3,6 +3,7 @@ import Maurqee from "../../component/Maurqee/Maurqee"
 import Slider from '../../component/Slider/Slider'
 import Card_Home from '../../component/Card-Home/CardHomePage'
 import logo from '../../assets/logo.png'
+import SliderSecond from "../../component/Slider/SliderSecond"
 const Home = () => {
   return (
     <div className="flex flex-col min-h-screen"> 
@@ -69,6 +70,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <SliderSecond/>
       <Maurqee/>
     </div>
   )
