@@ -1,4 +1,5 @@
 
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import AOS from 'aos';
 import { useEffect } from "react";

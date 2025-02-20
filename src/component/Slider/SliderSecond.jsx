@@ -12,10 +12,10 @@ const SliderSecond = () => {
       }, [])
   return (
     <div>
-      <motion.div ref={sliderRef} className='mx-[13vw] cursor-grab overflow-hidden'>
+      <motion.div   data-aos="zoom-in-up" ref={sliderRef} className='mx-[13vw] cursor-grab overflow-hidden'>
         <motion.div drag="x" dragConstraints={{ right: 0, left: -activeIndex }} className=' flex '>
             {imags.map((item, index) => (
-              <motion.div className='md:min-w-[29rem] sm:w-[20rem]  md:min-h-[30rem] md:mx-[10px] px-[20px] min-h-[20rem] min-w-[20rem] py-[40px]' key={index}>
+              <motion.div    data-aos="zoom-in-up" className='md:min-w-[29rem] sm:w-[20rem]  md:min-h-[30rem] md:mx-[10px] px-[20px] min-h-[20rem] min-w-[20rem] py-[40px]' key={index}>
                 <img className='w-[100%]  h-[100%] rounded-[20px] pointer-events-none' src={item} alt="" />
               </motion.div>
             ))}
