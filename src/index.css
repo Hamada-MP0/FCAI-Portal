@@ -9,8 +9,30 @@ html, body {
     width: 100%;
   }
   .active{
-    background-color: #db5534;
+    background-color: #f83200;
     color: white;
+  }
+  .forgot-password{
+    background-color: whitesmoke;
+   
+    height: 333px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+
+    z-index: 9999;
+    scale: 0;
+    transform: translateY(500);
+    transition: 1s;
+  }
+  
+  
+  .show-forgot-password{
+  scale: 1;
+  transform: translateY(0);
+  
   }
   .cardAbout{
     background-color: #faf9f3ec ;

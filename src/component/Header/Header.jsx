@@ -10,7 +10,7 @@ const Header = () => {
 
     
     return (
-        <section className='sticky top-0 z-50 bg-amber-50 w-full'>
+        <section className='sticky top-0 z-50 bg-black/10 shadow-2xl w-full'>
             <nav className="font-inter w-full shadow-xl">
                 <div className="max-w-[2520px] mx-auto xl:px-20 md:px-10 sm:px-2 px-4">
                     <div className="flex flex-col py-4 lg:flex-row lg:items-center lg:justify-between">
@@ -40,37 +40,36 @@ const Header = () => {
                             <div  data-aos="fade-down"
                                     data-aos-delay={ 900 }  className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-6 mt-4 lg:mt-0">
                                 <NavLink  data-aos="fade-down"
-                                    data-aos-delay={ 300 }  to="/" className="px-4 py-2 rounded-lg hover:bg-red-200 transition-colors text-gray-700 hover:text-gray-900 font-medium">
+                                    data-aos-delay={ 300 }  to="/" className="px-4 py-2 rounded-lg hover:bg-red-800 transition-colors text-gray-700 hover:text-gray-900 font-medium">
                                    <span  >Home</span>
                                 </NavLink>
                                 <NavLink  data-aos="fade-down"
-                                    data-aos-delay={ 600 } to="/about" className="px-4 py-2 rounded-lg hover:bg-red-200 transition-colors text-gray-700 hover:text-gray-900 font-medium">
+                                    data-aos-delay={ 600 } to="/about" className="px-4 py-2 rounded-lg hover:bg-red-800 transition-colors text-gray-700 hover:text-gray-900 font-medium">
                                     About
                                 </NavLink>
                                 <NavLink  data-aos="fade-down"
-                                    data-aos-delay={ 800 } to="/library" className="px-4 py-2 rounded-lg hover:bg-red-200 transition-colors text-gray-700 hover:text-gray-900 font-medium">
+                                    data-aos-delay={ 800 } to="/library" className="px-4 py-2 rounded-lg hover:bg-red-800 transition-colors text-gray-700 hover:text-gray-900 font-medium">
                                     Library
                                 </NavLink>
                                 <NavLink  data-aos="fade-down"
-                                    data-aos-delay={ 1000 } to="/reports" className="px-4 py-2 rounded-lg hover:bg-red-200 transition-colors text-gray-700 hover:text-gray-900 font-medium">
+                                    data-aos-delay={ 1000 } to="/reports" className="px-4 py-2 rounded-lg hover:bg-red-800 transition-colors text-gray-700 hover:text-gray-900 font-medium">
                                     Report
                                 </NavLink>
                                 <NavLink  data-aos="fade-down"
-                                    data-aos-delay={ 1200 } to="/contact_us" className="px-4 py-2 rounded-lg hover:bg-red-200 transition-colors text-gray-700 hover:text-gray-900 font-medium">
+                                    data-aos-delay={ 1200 } to="/contact_us" className="px-4 py-2 rounded-lg hover:bg-red-800 transition-colors text-gray-700 hover:text-gray-900 font-medium">
                                     Contact Us
                                 </NavLink>
                             </div>
 
                             {/* Actions (Sign Up, Login, Cart) */}
-                            <div className="flex flex-col lg:flex-row items-center space-y-2 lg:space-y-0 lg:space-x-4 mt-4 lg:mt-0">
-                                <NavLink  data-aos="zoom-in-up"
-                                    data-aos-delay={ 600 }  to="/sign_up" className="w-full lg:w-auto px-6 py-2.5 text-center rounded-lg hover:bg-red-200 transition-colors">
+                            <div data-aos="zoom-in-down"
+                                    data-aos-delay={ 200 } className="flex flex-col lg:flex-row items-center space-y-2 lg:space-y-0 lg:space-x-4 mt-4 lg:mt-0">
+                                <NavLink    to="/Sigin" className="w-full lg:w-auto px-6 py-2.5 text-center rounded-lg hover:bg-gray-800/50 transition-colors">
                                     Sign Up
                                 </NavLink>
-                                <Link  data-aos="zoom-in-up"
-                                    data-aos-delay={ 800 } to="/login" className="w-full lg:w-auto px-6 py-2.5 text-center rounded-lg bg-black text-white hover:bg-gray-800 transition-colors">
+                                <NavLink   to="/Login" className="w-full lg:w-auto px-6 py-2.5 text-center rounded-lg bg-black text-white hover:bg-gray-800/50 transition-colors">
                                     Login
-                                </Link>
+                                </NavLink>
                                 <div className='flex flex-col items-center justify-center'>
                                 <DarkMode/>
                                 <BtnLanguage/>
