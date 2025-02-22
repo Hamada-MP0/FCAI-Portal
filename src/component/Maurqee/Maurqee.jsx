@@ -12,12 +12,14 @@ import img10 from '../../assets/images/ten.png';
 import './Maurqee.css'
 const Maurqee = () => {
   return (
-    <div className="my-14 py-4 bg-slate-400">
-        <div className=" mb-12 text-center">
-        <h1 className="text-4xl font-bold text-[#000000]">Our Technology Partner</h1>
+    <div  data-aos="fade-right"  
+    data-aos-delay={ 600 } className="mt-24 shadow-2xl py-4 bg-black/10">
+        <div className=" shadow-2xl mb-12 text-center">
+        <h1 className=" text-4xl font-bold text-[#000000]">Our Technology Partner</h1>
       </div>
 
-      <div>
+      <div  data-aos="fade-up"  
+        data-aos-delay={ 1000 }>
         <Marquee direction="right" speed={100} delay={0}   pauseOnHover={true}>
           <div className="image_wrapper">
             <img src={img1} alt="" />

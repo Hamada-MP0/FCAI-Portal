@@ -1,4 +1,5 @@
 
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import AOS from 'aos';
 import { useEffect } from "react";
@@ -10,6 +11,9 @@ import Header from './component/Header/Header';
 import About from './pages/about/About';
 import ContactUs from './pages/ContactUS/ContactUs';
 import Report from './pages/Report/Report';
+import Login from './pages/sigin&Login/Login';
+import Sigin from './pages/sigin&Login/Sigin';
+
 function App() {
   useEffect(() => {
     AOS.init({
@@ -32,6 +36,10 @@ function App() {
         <Route path='/contact_us' element={<ContactUs/>}/>
         <Route path='/reports' element={<Report/>}/>
         <Route path='/library' element={<h1>library</h1>}/>
+        <Route path='/Login' element={<Login/>}/>
+        <Route path='/Sigin' element={<Sigin/>}/>
+
+
       </Routes>
         <Footer/>
     </BrowserRouter>
