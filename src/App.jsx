@@ -1,5 +1,4 @@
 
-import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import AOS from 'aos';
 import { useEffect } from "react";
@@ -11,8 +10,15 @@ import Header from './component/Header/Header';
 import About from './pages/about/About';
 import ContactUs from './pages/ContactUS/ContactUs';
 import Report from './pages/Report/Report';
-import Login from './pages/sigin&Login/Login';
+import Library  from './pages/Liberary/Library';
+import BestBooks  from './pages/Liberary/BestBooks';
+import AllBooks  from './pages/Liberary/AllBooks';
+import Favourite  from './pages/Liberary/Favourite';
+import ShowCard from './component/CardsLibrary/ShowCard';
 import Sigin from './pages/sigin&Login/Sigin';
+import Login from './pages/sigin&Login/Login';
+
+
 
 function App() {
   useEffect(() => {
@@ -35,9 +41,15 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/contact_us' element={<ContactUs/>}/>
         <Route path='/reports' element={<Report/>}/>
-        <Route path='/library' element={<h1>library</h1>}/>
-        <Route path='/Login' element={<Login/>}/>
+        <Route path='/library' element={<Library/>}>
+           <Route index element={<BestBooks/>}/>
+           <Route path='best_books' element={<BestBooks/>}/>
+           <Route path='all_books' element={<AllBooks/>}/>
+           <Route path='favourite' element={<Favourite/>}/>
+        </Route>
+        <Route path='/library/showCard/:id' element={<ShowCard/>}/>
         <Route path='/Sigin' element={<Sigin/>}/>
+        <Route path='/Login' element={<Login/>}/>
 
 
       </Routes>
