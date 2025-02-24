@@ -29,8 +29,8 @@ const Login = () => {
    <div    data-aos="fade-up"
         data-aos-delay={ 200 } className="container mx-auto">
       <div className="flex flex-wrap -mx-4 ">
-      <form className={`forgot-password ${showForm} lg:w-[35vw] sm:w-[70%] w-full sm:right-[10%] lg:top-[40%]
-    lg:right-[35%] `} >
+      <form className={`forgot-password ${showForm} lg:w-[35vw] sm:w-[70%] w-full sm:right-[10%] lg:top-[20%]
+    lg:right-[28%] `} >
           <div
             onClick={() => {
               setshowForm("");
