@@ -19,14 +19,35 @@ const Sigin = () => {
         <div className="mx-auto max-w-sm mb-4 pb-4">
           <form name="wf-form-password" method="get">
             <div  data-aos="fade-up"  
+        data-aos-delay={ 1300 } className="relative">
+              <box-icon className="absolute left-5 top-3 inline-block" name='body'></box-icon>
+              <input type="text" className="shadow-2xl mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 pl-14 text-sm text-black placeholder:text-black" placeholder="First Name" required="" />
+            </div>
+            <div  data-aos="fade-up"  
+        data-aos-delay={ 500 } className="relative">
+              <box-icon className="absolute left-5 top-3 inline-block" name='body'></box-icon>
+              <input type="text" className=" shadow-2xl mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 pl-14 text-sm text-black placeholder:text-black" placeholder="Last Name" required="" />
+            </div>
+            <div  data-aos="fade-up"  
+        data-aos-delay={ 100 } className="relative">
+              <box-icon className="absolute left-5 top-3 inline-block" name='phone'></box-icon>
+              
+<input type="tel" className="mb-4 block h-9 w-full shadow-2xl rounded-md border border-solid border-black px-3 py-6 pl-14 text-sm text-black placeholder:text-black" placeholder="Phone" required="" />
+            </div>
+            <div  data-aos="fade-up"  
+        data-aos-delay={ 300 } className="relative">
+              <img alt="" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9455fae6cf89_EnvelopeSimple.svg" className="absolute left-5 top-3 inline-block" />
+              <input type="email" className="mb-4 block shadow-2xl h-9 w-full rounded-md border border-solid border-black px-3 py-6 pl-14 text-sm text-black placeholder:text-black" placeholder="Email Address" required="" />
+            </div>
+            <div  data-aos="fade-up"  
         data-aos-delay={ 1000 } className="relative">
               <img alt="" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9455fae6cf89_EnvelopeSimple.svg" className="absolute left-5 top-3 inline-block" />
-              <input type="email" className="mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 pl-14 text-sm text-black placeholder:text-black" placeholder="Email Address" required="" />
+              <input type="email" className="mb-4 block h-9  shadow-2xl w-full rounded-md border border-solid border-black px-3 py-6 pl-14 text-sm text-black placeholder:text-black" placeholder="Email Address" required="" />
             </div>
             <div   data-aos="fade-up"  
         data-aos-delay={ 600 }className="relative mb-4">
               <img alt="" src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a946794e6cf8a_Lock-2.svg" className="absolute left-5 top-3 inline-block" />
-              <input type="password" className="mb-4 block h-9 w-full rounded-md border border-solid border-black px-3 py-6 pl-14 text-sm text-black placeholder:text-black" placeholder="Password (min 8 characters)" required="" />
+              <input type="password" className="mb-4 block h-9 shadow-2xl w-full rounded-md border border-solid border-black px-3 py-6 pl-14 text-sm text-black placeholder:text-black" placeholder="Password (min 8 characters)" required="" />
             </div>
             <label  data-aos="fade-up"  
         data-aos-delay={ 1200 } className="mb-6 flex items-center justify-start pb-12 pl-5 font-medium md:mb-10 lg:mb-1">
@@ -39,14 +60,20 @@ const Sigin = () => {
                 </a>
               </span>
             </label>
-            <input data-aos="zoom-in-down"
-                                    data-aos-delay={ 1500 } type="submit" value="Join Flowspark" className="inline-block w-full cursor-pointer items-center bg-black px-6 py-3 text-center font-semibold text-white" />
+            <Link
+  to="/login"
+  data-aos="zoom-in-down"
+  data-aos-delay={1500}
+  className="shadow-2xl inline-block w-full text-center cursor-pointer bg-black px-6 py-3 font-semibold text-white"
+>
+  Sign Up
+</Link>
           </form>
         </div>
         <p data-aos="zoom-in-down"
                                     data-aos-delay={ 100 } className="text-sm text-gray-500 sm:text-sm">
           Already have an account?
-          <Link to="/Login" className="font-bold text-black hover:text-red-600">
+          <Link to="/Login" className="font-bold shadow-2xl text-black hover:text-red-600">
             Login now 
           </Link>
         </p>
@@ -61,7 +88,7 @@ const Sigin = () => {
         data-aos-delay={ 1600 } src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a949eade6cf7d_Vector-2.svg" alt="" className=" inline-block" />
         </div>
         <p    data-aos="fade-down"
-        data-aos-delay={ 1000 } className="mb-8 text-sm sm:text-base md:mb-12 lg:mb-16">
+        data-aos-delay={ 1000 } className="mb-8 shadow-2xl p-5 rounded-md text-sm sm:text-base md:mb-12 lg:mb-16">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
           aliquam, purus sit amet luctus venenatis, lectus magna fringilla
           urna, porttitor rhoncus dolor purus non enim.

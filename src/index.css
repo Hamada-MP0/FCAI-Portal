@@ -7,6 +7,8 @@ html, body {
     padding: 0;
     overflow-x: hidden; 
     width: 100%;
+    font-family: "Poppins", sans-serif;
+
   }
   .active{
     background-color: #f83200;
@@ -38,7 +40,7 @@ html, body {
     background-color: #faf9f3ec ;
     min-width: 60%;
     min-height: 60%;
-    overflow-x: scroll;
+    overflow-y: auto;
     border-radius: 15px;
     display: flex;
     max-width: 95%;

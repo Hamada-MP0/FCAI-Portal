@@ -51,8 +51,8 @@ const Library = () => {
                 <img data-aos="zoom-in" className='h-full w-full' src={librarySlide1} alt="" />
                 <div data-aos="fade-up-right" className="absolute bottom-[20px] left-[20px] transform flex flex-col gap-5 -translate-y-1/2 text-white text-center">
                     <span className='text-5xl font-bold'>More Knowlage</span>
-                    <button  className='bg-blue-800 px-4 py-2 rounded-lg hover:opacity-95'>Read Now</button>
-                </div>
+                    <button onClick={() => window.scrollTo({ top: 631, behavior: 'smooth' })} className='bg-blue-800 px-4 py-2 rounded-lg hover:opacity-95'>Read Now</button>
+                    </div>
             </div>
         </SwiperSlide>
         <SwiperSlide className=''>
@@ -60,13 +60,13 @@ const Library = () => {
                 <img data-aos="zoom-in" className='h-full w-full' src={librarySlide2} alt="" />
                 <div data-aos="fade-up-right" className="absolute bottom-[20px] left-[20px] transform flex flex-col gap-5 -translate-y-1/2 text-white text-center">
                     <span className='text-5xl font-bold'>More Knowlage</span>
-                    <button onClick={()=>(window.scrollY === 631)  }  className='bg-blue-800 px-4 py-2 rounded-lg hover:opacity-95'>Read Now</button>
-                </div>
+                    <button onClick={() => window.scrollTo({ top: 631, behavior: 'smooth' })} className='bg-blue-800 px-4 py-2 rounded-lg hover:opacity-95'>Read Now</button>
+                    </div>
             </div>
         </SwiperSlide>
         </Swiper>
         
-        <div className="w-full bg-gray-800">
+        <div className="w-full bg-black/90">
           <div className="container mx-auto py-10">
             <ul className='flex text-white gap-5 border-b-2'>
               <NavLink 

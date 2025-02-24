@@ -7,17 +7,18 @@ import Estimates from './Estimates';
 import Level4i from './Level4i';
 
 
-const CardmanagersTable = ({isTransform, setIsTransform, Value }) => {
+const   CardmanagersTable = ({isTransform, setIsTransform, Value }) => {
   return (
     <div>
              <div className="  relative flex justify-center items-center">
-         <form className={`zz ${isTransform} top-[10%]  overflow-y-auto max-h-screen `}>
+         <form className={`zz ${isTransform} top-[10%]  overflow-y-auto max-h-[80vh] `}>
         
         <button type="button" onClick={() => setIsTransform("")} className="close">
           <i className="fa-solid fa-xmark"></i> 
         </button>
   
-        <div className="w-full"
+        <div className="w-full my-5"
+        
           >
 
 
