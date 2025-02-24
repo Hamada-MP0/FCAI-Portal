@@ -9,7 +9,7 @@ const Clock = () => {
       setTime(new Date());
     }, 1000); // تحديث كل ثانية
 
-    return () => clearInterval(interval); // تنظيف الـ interval عند إلغاء تحميل المكون
+    return () => clearInterval(interval);
   }, []);
 
 

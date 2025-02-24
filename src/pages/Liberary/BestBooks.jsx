@@ -16,10 +16,10 @@ const AllBooks = () => {
   
   return (
     <div className="container mx-auto px-4">
-      <h1 className="text-3xl font-bold mb-6 italic text-white">top 10 Books &gt;</h1>
+      <h1 className="text-3xl font-bold mb-6 italic text-white">top 20 Books &gt;</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {booksData.results?.length > 0 ? (
-          booksData.results.slice(0 ,10).map((book ) => (
+          booksData.results.slice(0 ,20).map((book ) => (
             <BestCard 
               key={book.id}
               title={book.title} 

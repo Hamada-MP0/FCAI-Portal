@@ -111,11 +111,13 @@ const Login = () => {
                   </div>
                   <div data-aos="zoom-in-down"
                                     data-aos-delay={ 1000 } className="mb-10 shadow-2xl">
-                     <input
+                     <button
                         type="submit"
-                        value="Sign In"
+                      
+                       
+                        
                         className="w-full px-5 py-3 text-base font-medium text-black bg-red-700 transition border rounded-md cursor-pointer border-primary bg-primary hover:bg-opacity-90"
-                        />
+                        ><Link to="/">  Sign In</Link></button>
                   </div>
                </form>
                <p  data-aos="zoom-in-down"

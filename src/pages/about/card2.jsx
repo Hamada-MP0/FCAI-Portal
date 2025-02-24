@@ -1,14 +1,16 @@
 import img from '../../assets/imageAbout/collage.jpg'
 const Card2 = () => {
+  const imgClasses = 'rounded-[20px] w-full rounded-r-[40px] 2xl:m-16 m-1 mt-8';
+const titleClasses = 'text-xl md:text-2xl font-[700] text-black/80 my-2';
+
   return (
     <div className='relative'>
         <div    data-aos="fade-down"
                         data-aos-delay={900 }
-         className='grid lg:grid-cols-2   lg:justify-between gap-9 lg:gap-32 shadow-2xl  border-b-2 border-black/80 rounded-b-[50px]'>
-            <img    data-aos="zoom-in-up"
-                        data-aos-delay={1200 } src={img} alt="" className='rounded-[20px] pr-5 pl-2 rounded-r-[40px] lg:m-16 m-1 mt-8' />
+                        className='grid 2xl:grid-cols-2    lg:justify-between gap-9 2xl:gap-32 shadow-2xl  border-b-2 border-black/80 rounded-b-[50px]'>
+<img className={imgClasses} src={img} alt="Fayoum University College building" loading="lazy" />
      <div  data-aos="zoom-in-up"
-                        data-aos-delay={1200 } className='md:mr-14 m-5 lg:mt-16'>
+                        data-aos-delay={1200 } className='md:mr-14 m-5 xl:mt-16'>
         <h1 className='md:text-3xl  text-xl font-bold text-[#000000]'>The origin of the college :</h1>
                <h2 className='  md:m-[10px] md:text-xl text-base  font-[500] text-black/50 
                '>Presidential Decree No. 267 of 2006 was issued, which includes the establishment of the Faculty of Computers and Information at Fayoum University. The Supreme Council of Universities approved in its session dated 3/9/2006 the commencement of studies at the faculty as of the academic year 2006-2007.</h2>
@@ -19,7 +21,7 @@ const Card2 = () => {
                   collect, organize, store, retrieve, broadcast, measure and evaluate
                    information, which sheds light on the multiplicity of specializations, 
                    in addition to the existence of many interdisciplinary specializations.</h2>
-                   <h2 className=' text-xl md:text-2xl font-[700] text-black/80 my-2 '>College Vision:</h2> 
+                   <h2 className={titleClasses}>College Vision:</h2>
              <h3 className='m-[10px] text-base md:text-xl font-[500] text-black/80 '>
                    Fayoum University College of Computers
                     and Information seeks to advance and excel
