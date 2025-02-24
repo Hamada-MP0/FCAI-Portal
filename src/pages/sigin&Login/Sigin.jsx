@@ -89,7 +89,7 @@ const Sigin = () => {
         </div>
         <p    data-aos="fade-down"
         data-aos-delay={ 1000 } className="mb-8 shadow-2xl p-5 rounded-md text-sm sm:text-base md:mb-12 lg:mb-16">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+          Lorem ipsum dolor sit amet, consectetur adipisdd lfmcing elit ut
           aliquam, purus sit amet luctus venenatis, lectus magna fringilla
           urna, porttitor rhoncus dolor purus non enim.
         </p>
