@@ -31,7 +31,7 @@
 - **State Management & API Calls**: React Hooks, Axios  
 
 ## 🔗 Project Link:
-[📌 FCAI-Portal Live Demo](#) *(Update the link when deployed)*  
+[📌 https://hamada-mp0.github.io/FCAI-Portal/]# 
 
 ## 💜 Installation & Running Locally:
 ```bash
