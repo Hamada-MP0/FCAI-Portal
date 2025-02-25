@@ -45,10 +45,10 @@ const Report = () => {
   };
 
   return (
-    <div>
-      <div data-aos="fade-right" className="relative flex flex-col top-0 justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
+    <div className="mt-28">
+      <div data-aos="fade-right" className="relative dark:bg-gray-900 flex flex-col top-0 justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
         <div className="bg-white relative top-0 h-full mx-auto w-full">
-          <div className="grid gap-2 grid-cols-6 h-full">
+          <div className="grid dark:bg-gray-900 gap-2  md:grid-cols-6 h-full">
             <div className="bg-blue-900 dark:bg-[#1E2935] p-10 col-span-2">
               <h2 className="mb-10 font-bold text-2xl text-blue-100 before:block before:absolute before:bg-sky-300 before:content[''] relative before:w-20 before:h-1 before:-skew-y-3 before:-bottom-4">Info Contact</h2>
               <p className="font-bold text-blue-100 py-8 border-b border-blue-700">
@@ -134,7 +134,7 @@ const Report = () => {
           </div>
         </div>
       </div>
-      <section data-aos="fade-left" className="relative z-20 overflow-hidden bg-white pb-12 pt-20 dark:bg-[#111928] lg:pb-[90px] lg:pt-[120px]">
+      <section data-aos="fade-left" className="relative z-20 overflow-hidden flex-wrap bg-white pb-12 pt-20 dark:bg-[#111928] lg:pb-[90px] lg:pt-[120px]">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">

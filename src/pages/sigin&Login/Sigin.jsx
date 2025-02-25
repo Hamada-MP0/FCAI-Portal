@@ -2,22 +2,22 @@ import { Link } from 'react-router-dom'
 import Login from '../sigin&Login/Login'
 const Sigin = () => {
   return (
-    <div>
+    <div className="dark:bg-gray-950/80">
       
 <section>
 
   <div  className="grid gap-0 md:h-screen md:grid-cols-2">
     
     <div  data-aos="fade-right"  
-        data-aos-delay={ 1600 } className="flex items-center justify-center px-5 py-16 md:px-10 md:py-20">
-      <div className="max-w-md text-center">
+        data-aos-delay={ 1600 } className="flex items-center  dark:bg-black/60 justify-center  shadow-2xl px-5 py-16 md:px-10 md:py-20">
+      <div className="max-w-md text-center  dark:bg-gray-950/20">
         <h2  data-aos="fade-right"  
-        data-aos-delay={ 2000 } className="mb-8 text-3xl font-bold md:mb-12 text-red-700 md:text-5xl lg:mb-16">
+        data-aos-delay={ 2000 } className="mb-8  text-3xl font-bold md:mb-12 text-red-700 md:text-5xl lg:mb-16">
           Start your Computers and Information
         </h2>
       
-        <div className="mx-auto max-w-sm mb-4 pb-4">
-          <form name="wf-form-password" method="get">
+        <div className="mx-auto  max-w-sm mb-4 pb-4">
+          <form name="wf-form-password" method="get" className=''>
             <div  data-aos="fade-up"  
         data-aos-delay={ 1300 } className="relative">
               <box-icon className="absolute left-5 top-3 inline-block" name='body'></box-icon>
@@ -53,7 +53,7 @@ const Sigin = () => {
         data-aos-delay={ 1200 } className="mb-6 flex items-center justify-start pb-12 pl-5 font-medium md:mb-10 lg:mb-1">
               <input type="checkbox" name="checkbox" className="float-left mt-1" />
               <span data-aos="zoom-in-down"
-                                    data-aos-delay={ 200 } className="ml-4 inline-block cursor-pointer text-sm" for="checkbox">
+                                    data-aos-delay={ 200 } className="ml-4 inline-block cursor-pointer text-sm dark:text-white" for="checkbox">
                 I agree with the
                 <a   href="javascript:void(0);" className="font-bold">
                   Terms & Conditions
@@ -64,7 +64,7 @@ const Sigin = () => {
   to="/login"
   data-aos="zoom-in-down"
   data-aos-delay={1500}
-  className="shadow-2xl inline-block w-full text-center cursor-pointer bg-black px-6 py-3 font-semibold text-white"
+  className="shadow-2xl inline-block w-full text-center cursor-pointer dark:hover:bg-gray-800  bg-black px-6 py-3 font-semibold text-white"
 >
   Sign Up
 </Link>
@@ -73,7 +73,7 @@ const Sigin = () => {
         <p data-aos="zoom-in-down"
                                     data-aos-delay={ 100 } className="text-sm text-gray-500 sm:text-sm">
           Already have an account?
-          <Link to="/Login" className="font-bold shadow-2xl text-black hover:text-red-600">
+          <Link to="/Login" className="font-bold shadow-2xl dark:text-white dark:hover:text-red-600 text-black hover:text-red-600">
             Login now 
           </Link>
         </p>

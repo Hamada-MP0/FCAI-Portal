@@ -2,11 +2,11 @@
 const ContactUs = () => {
   return (
     <>
-      <section className="relative z-10 overflow-hidden flex items-center bg-white py-20 dark:bg-[#111928] lg:py-[120px]">
+      <section className="relative mt-28 z-10 overflow-hidden flex items-center bg-white py-20 dark:bg-[#111928] lg:py-[120px]">
         <div className="container mx-auto">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div data-aos="fade-right" className="w-full px-4 lg:w-1/2 xl:w-6/12">
-              <div className="mb-12 max-w-[570px] lg:mb-0">
+              <div className="mb-12 px-5 max-w-[570px] lg:mb-0">
                 <span className="mb-4 block text-base font-semibold text-[#3758F9]">
                   Contact Us
                 </span>

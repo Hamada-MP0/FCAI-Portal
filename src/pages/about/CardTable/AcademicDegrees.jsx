@@ -1,7 +1,7 @@
 
 const Estimates = () => {
   return (
-    <div>
+    <div className="py-22 mt-60 sm:mt-10">
     
     <div className="w-full max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
       <h1 className="text-3xl font-bold text-red-600 border-b-2 border-red-600 pb-2">Academic Degrees</h1>

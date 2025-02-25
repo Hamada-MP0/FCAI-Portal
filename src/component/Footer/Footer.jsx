@@ -28,7 +28,7 @@ const Footer = () => {
 
   return (<>
   
-  <div style={BannerImg} className="text-white w-full py-10">
+  <div style={BannerImg} className="text-white w-full py-10 ">
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap justify-between items-center gap-10">
 
@@ -56,7 +56,7 @@ const Footer = () => {
             }`}
           >
             {Object.keys(footerLinks).map((sectionKey, index) => (
-              <div key={sectionKey} className="w-[200px]">
+              <div key={sectionKey} className="w-[220px]">
                 <h3
                   data-aos="fade-right"
                   className="text-lg from-neutral-800 border-b-2 pb-2 mb-2 relative hover:text-red-800  hover:scale-150 transition-all ease-in duration-300"

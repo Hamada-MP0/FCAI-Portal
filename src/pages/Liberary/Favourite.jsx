@@ -20,8 +20,8 @@ const Favourite = () => {
   if (favourites.length === 0) {
     return (
       <div className=" py-12">
-        <h1 className="text-3xl font-bold mb-6 italic text-white">Favourites &gt;</h1>
-        <p className="text-gray-400 text-3xl my-4 text-center">No favorite books yet. Add some books to your favourites!</p>
+        <h1 className="text-3xl font-bold mb-6 italic dark:text-white">Favourites &gt;</h1>
+        <p className="dark:text-gray-400 text-red-600 text-3xl my-4 text-center">No favorite books yet. Add some books to your favourites!</p>
       </div>
     );
   }

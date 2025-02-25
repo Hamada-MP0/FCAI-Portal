@@ -1,7 +1,7 @@
 
 const AcademicDegrees = () => {
   return (
-    <div className="py-10">
+    <div className="py-22 mb-5 pt-36 sm:pt-5 ">
       <div className="flex flex-col items-center">
         <h1 className="mx-4 my-14 font-semibold">The success rate in each course, as well as when transferring to the next class, and the cumulative total are calculated according to the following:</h1>
   <table className="border border-green-500 w-3/4 text-center">

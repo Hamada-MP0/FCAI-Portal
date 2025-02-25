@@ -2,11 +2,11 @@
 
 const Card3 = () => {
   return (
-    <div className="pb-2 border-b-2 shadow-2xl border-black/50 rounded-b-[100px]">
-      <section className="pt-20 pb-10 lg:pt-[120px] lg:pb-20 bg-white dark:bg-dark">
+    <div className="pb-2 border-b-2 shadow-2xl  border-black/50 rounded-b-[100px]">
+      <section className="pt-20 dark:bg-black/40 pb-10 lg:pt-[120px] rounded-t-[50px] rounded-b-[80px] lg:pb-20 bg-white dark:bg-dark">
         <div className="container mx-auto">
           <div className="flex flex-wrap justify-center -mx-4">
-            <div className="w-full px-4">
+            <div className="w-full px-4"> 
               <div
                 data-aos="zoom-in-up"
                 data-aos-delay="1200"
@@ -26,7 +26,7 @@ const Card3 = () => {
                 >
                   The most important sections
                 </h2>
-                <p className="text-base text-body-color dark:text-dark-6">
+                <p className="text-base dark:text-white/50 text-body-color dark:text-dark-6">
                   There are many sections and fields in the computing path, and the most important of these fields are:
                 </p>
               </div>
@@ -36,12 +36,12 @@ const Card3 = () => {
           <div
             data-aos="zoom-in-down"
             data-aos-delay="200"
-            className="flex shadow-2xl flex-wrap -mx-4 rounded-[50px]"
+            className="flex  flex-wrap -mx-4 gap-5 rounded-[50px]"
           >
 
-            <div className="w-full px-4 md:w-1/2 lg:w-1/3 border border-black/20 rounded-[50px]">
-              <div className="w-full mb-10">
-                <div className="mb-8 overflow-hidden shadow-2xl border border-black/20 rounded-[50px]">
+            <div className="w-full px-4 md:w-1/2 lg:w-[30%] border shadow-2xl  border-black/20 rounded-[50px]">
+              <div data-aos="fade-right " className="w-full  mb-10">
+                <div className="mb-8 overflow-hidden shadow-2xl border  border-black/20 rounded-[50px]">
                   <img
                     data-aos="zoom-in-up"
                     data-aos-delay="800"
@@ -51,7 +51,7 @@ const Card3 = () => {
                     loading="lazy"
                   />
                 </div>
-                <div data-aos="fade-right">
+                <div data-aos="fade-right " className="px-5">
                   <span className="inline-block px-4 py-1 mb-5 text-xs font-semibold leading-loose text-center text-white rounded bg-primary">
                     Dec 22, 2025
                   </span>
@@ -65,7 +65,7 @@ const Card3 = () => {
                       Information Systems (IS)
                     </a>
                   </h3>
-                  <p className="text-base text-body-color dark:text-dark-6" data-aos="fade-right" data-aos-delay="1200">
+                  <p className=" dark:text-white/50 text-base text-body-color dark:text-dark-6" data-aos="fade-right" data-aos-delay="1200">
                     Focuses on designing, developing, and managing systems that collect, process, and analyze data to support business and organizational decision-making.
                   </p>
                 </div>
@@ -73,7 +73,7 @@ const Card3 = () => {
             </div>
 
  
-            <div className="w-full shadow-2xl px-4 md:w-1/2 lg:w-1/3 border border-black/20 rounded-[50px]">
+            <div data-aos="fade-right " className="w-full shadow-2xl px-4 md:w-1/2  lg:w-[30%] border border-black/20 rounded-[50px]">
               <div className="w-full mb-10">
                 <div className="mb-8 overflow-hidden shadow-2xl border border-black/20 rounded-[50px]">
                   <img
@@ -85,7 +85,7 @@ const Card3 = () => {
                     loading="lazy"
                   />
                 </div>
-                <div>
+                <div className="px-5">
                   <span data-aos="fade-right" className="inline-block px-4 py-1 mb-5 text-xs font-semibold leading-loose text-center text-white rounded bg-primary">
                     Mar 15, 2025
                   </span>
@@ -99,14 +99,14 @@ const Card3 = () => {
                       Artificial Intelligence (AI)
                     </a>
                   </h3>
-                  <p className="text-base text-body-color dark:text-dark-6" data-aos="fade-right" data-aos-delay="1200">
+                  <p className="text-base  dark:text-white/50 text-body-color dark:text-dark-6" data-aos="fade-right" data-aos-delay="1200">
                     🤖 A branch of computer science that aims to develop systems capable of learning, reasoning, and making decisions similar to human intelligence, including deep learning and computer vision.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="w-full shadow-2xl px-4 md:w-1/2 lg:w-1/3 border border-black/20 rounded-[50px]">
+            <div  data-aos="fade-right " className="w-full shadow-2xl px-4 md:w-1/2  lg:w-[30%] border border-black/20 rounded-[50px]">
               <div className="w-full mb-10">
                 <div className="mb-8 overflow-hidden shadow-2xl border border-black/20 rounded-[50px]">
                   <img
@@ -118,7 +118,7 @@ const Card3 = () => {
                     loading="lazy"
                   />
                 </div>
-                <div>
+                <div className="px-5">
                   <span data-aos="fade-right" className="inline-block px-4 py-1 mb-5 text-xs font-semibold leading-loose text-center text-white rounded bg-primary">
                     Jan 05, 2025
                   </span>
@@ -132,7 +132,7 @@ const Card3 = () => {
                       Computer Science (CS)
                     </a>
                   </h3>
-                  <p className="text-base text-body-color dark:text-dark-6" data-aos="fade-right">
+                  <p className="text-base dark:text-white/50 text-body-color dark:text-dark-6" data-aos="fade-right">
                     💻 Studies the fundamental principles and theories of computing, including algorithms, data structures, cybersecurity, software development, and networking.
                   </p>
                 </div>
