@@ -1,5 +1,3 @@
-
-
 import AOS from 'aos';
 import { useEffect } from "react";
 import "aos/dist/aos.css";
@@ -17,6 +15,7 @@ import Favourite  from './pages/Liberary/Favourite';
 import ShowCard from './component/CardsLibrary/ShowCard';
 import Sigin from './pages/sigin&Login/Sigin';
 import Login from './pages/sigin&Login/Login';
+import NoPage from './pages/NoPage/NoPage';
 
 
 
@@ -33,29 +32,28 @@ function App() {
   }, []);
 
   return (
-    <>
- <BrowserRouter>
-        <Header/>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/contact_us' element={<ContactUs/>}/>
-        <Route path='/reports' element={<Report/>}/>
-        <Route path='/library' element={<Library/>}>
-           <Route index element={<BestBooks/>}/>
-           <Route path='best_books' element={<BestBooks/>}/>
-           <Route path='all_books' element={<AllBooks/>}/>
-           <Route path='favourite' element={<Favourite/>}/>
-        </Route>
-        <Route path='/library/showCard/:id' element={<ShowCard/>}/>
-        <Route path='/Sigin' element={<Sigin/>}/>
-        <Route path='/Login' element={<Login/>}/>
+    <BrowserRouter>
+        <Header />
 
-
-      </Routes>
-        <Footer/>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/about' element={<About/>}/>
+            <Route path='/contact_us' element={<ContactUs/>}/>
+            <Route path='/reports' element={<Report/>}/>
+            <Route path='/library' element={<Library/>}>
+              <Route index element={<BestBooks/>}/>
+              <Route path='best_books' element={<BestBooks/>}/>
+              <Route path='all_books' element={<AllBooks/>}/>
+              <Route path='favourite' element={<Favourite/>}/>
+            </Route>
+            <Route path='/library/showCard/:id' element={<ShowCard/>}/>
+            <Route path='/Sigin' element={<Sigin/>}/>
+            <Route path='/Login' element={<Login/>}/>
+            <Route path='*' element={<NoPage/>}/>
+          </Routes>
+        
+        <Footer />
     </BrowserRouter>
-    </>
   )
 }
 

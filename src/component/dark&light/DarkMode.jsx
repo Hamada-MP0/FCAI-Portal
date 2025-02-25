@@ -23,7 +23,7 @@ const DarkMode = () => {
     data-aos-delay={ 900 } className="relative">
 <button
   onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-  className="w-12 h-12 flex items-center justify-center bg-transparent border-none cursor-pointer transition-all duration-300"
+  className="w-12 h-12 flex items-center justify-center dark:text-white bg-transparent border-none cursor-pointer transition-all duration-300"
 >
   {theme === "light" ? <Sun size={25} /> : <Moon size={25} />}
 </button>

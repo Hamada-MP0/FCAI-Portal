@@ -9,14 +9,14 @@ const AllBooks = () => {
   if (!booksData || !booksData.results) {
     return (
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl text-center font-bold mb-6 text-white">Loading...</h1>
+        <h1 className="text-4xl text-center font-bold mb-6 dark:text-white">Loading...</h1>
       </div>
     );
   }
   
   return (
     <div className="container mx-auto px-4">
-      <h1 className="text-3xl font-bold mb-6 italic text-white">top 10 Books &gt;</h1>
+      <h1 className="text-3xl font-bold mb-6 italic dark:text-white">top 10 Books &gt;</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {booksData.results?.length > 0 ? (
           booksData.results.slice(0 ,10).map((book ) => (
@@ -33,7 +33,7 @@ const AllBooks = () => {
           ))
         ) : (
           <div className="col-span-full text-center">
-            <h1 className="text-white text-xl">No Books Found</h1>
+            <h1 className="dark:text-white text-xl">No Books Found</h1>
           </div>
         )}
       </div>

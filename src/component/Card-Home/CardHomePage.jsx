@@ -28,40 +28,56 @@ const optionscard2 = {
     ]
 };
 
-const Card_Home = () => {
+const 
+
+Card_Home = () => {
     const { t, i18n } = useTranslation();
     const isArabic = i18n.language === "ar";
 
     return (
-        <div className="my-10">
-            <div className={`grid w-full shadow-2xl gap-4 lg:grid-cols-2 relative flex-wrap ${isArabic ? "rtl" : ""}`}>
+        <div className="w-full px-4 py-8  sm:px-6 lg:px-8">
+            <div className={`grid w-full gap-6 md:gap-8 lg:grid-cols-2 ${isArabic ? "rtl" : ""}`}>
     
-                <div    data-aos="fade-down"
-                                    data-aos-delay={ 300 }  className="m-5 w-[90%] rounded-l-[20px] p-[10px]">
-                    <h2 className=" lg:text-[35px] text-[25px] text-center shadow-2xl  font-bold bg-red-800/90 rounded-[20px] p-[10px]">
+                {/* Important Links Section */}
+                <div data-aos="fade-down"
+                     data-aos-delay={300}
+                     className="w-full rounded-lg p-4 sm:p-6">
+                    <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-center dark:text-white font-bold bg-red-800/90 rounded-lg p-4">
                         {t("CardHome.important_links.important_links")}
                     </h2>
-                    <ul className=" shadow-2xl ml-10 rounded-r-[20px] sm:rounded-r-[200px] mt-10 bg-gray-950/5 p-[10px]  ">
+                    <ul className="mt-6 sm:mt-8 shadow-2xl rounded-lg sm:rounded-r-[100px] dark:bg-gray-950/50 p-4 sm:p-6">
                         {optionscard.important_links.slice(1).map((item, index) => (
-                            <li    data-aos="fade-left"
-                            data-aos-delay={index * 300+ index * 300 } 
-                             className=" list-disc pl-4 ml-10 pb-3 cursor-pointer  hover:text-red-500 lg:text-[25px] text-[20px]" key={index}>{t(`CardHome.important_links.${item}`)}</li>
+                            <li data-aos="fade-left"
+                                data-aos-delay={index * 300}
+                                className="list-disc dark:text-white pl-2 sm:pl-4 ml-4 sm:ml-6 pb-3 cursor-pointer hover:text-red-500 
+                                         text-base sm:text-lg lg:text-xl xl:text-2xl transition-colors duration-200"
+                                key={index}>
+                                {t(`CardHome.important_links.${item}`)}
+                            </li>
                         ))}
                     </ul>
                 </div>
 
-          
-                <div  className="grid text-center  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2  mx-[10px]  ">
+                {/* Units and Agencies Grid */}
+                <div className="grid gap-6 sm:grid-cols-2">
                     {Object.keys(optionscard2).map((card, index) => (
-                        <div  data-aos="fade-down"
-                        data-aos-delay={ 900*index } key={index} className=" text-black/70 shadow-2xl rounded-[20px] p-5 h-full flex flex-col justify-between">
-                            <h2 className="lg:text-[35px]  text-[25px] font-bold shadow-2xl bg-red-800/90 rounded-[20px] p-[10px] text-center mb-3">
+                        <div data-aos="fade-down"
+                             data-aos-delay={900 * index}
+                             key={index}
+                             className="flex flex-col h-full rounded-lg p-4 sm:p-5">
+                            <h2 className="text-xl sm:text-2xl lg:text-3xl dark:text-white font-bold shadow-xl 
+                                         bg-red-800/90 rounded-lg p-3 sm:p-4 text-center mb-4">
                                 {t(`CardHome.${card}.${optionscard2[card][0]}`)}
                             </h2>
-                            <ul className="list-disc mt-10 pl-5 space-y-2 flex-1  shadow-2xl bg-gray-950/5 rounded-t-[20px] rounded-b-[200px]">
+                            <ul className="flex-1 list-disc mt-6 space-y-3 dark:bg-gray-950/50 shadow-xl 
+                                         bg-gray-950/5 rounded-t-lg rounded-b-[100px] p-4 sm:p-6">
                                 {optionscard2[card].slice(1).map((item, idx) => (
-                                    <li      data-aos="fade-left"
-                                    data-aos-delay={index * 400+ idx * 300 } key={idx} className="list-disc  ml-5 lg:text-[20px] pt-5 wt-5 wx-5 pr-5  hover:text-red-500 border-b translate-x-1 transition-all ease-in-out duration-300 cursor-pointer border-gray-500/20 pb-1">
+                                    <li data-aos="fade-left"
+                                        data-aos-delay={index * 400 + idx * 300}
+                                        key={idx}
+                                        className="list-disc w-fit dark:text-white ml-4 text-sm sm:text-base lg:text-lg
+                                                 hover:text-red-500 transition-all duration-300 cursor-pointer 
+                                                 border-b border-transparent hover:border-gray-500/20 pb-2">
                                         {t(`CardHome.${card}.${item}`)}
                                     </li>
                                 ))}

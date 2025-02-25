@@ -30,7 +30,7 @@ const Heroslider = () => {
   ];
 
   return (
-    <div className="relative    min-full h-full  lg:w-[100%] sm:min-h-[800px] bg-gray-950/15 flex justify-center items-center dark:bg-gray-950/90 dark:text-white duration-200">
+    <div className="relative  min-full h-full  lg:w-[100%] sm:min-h-[800px] dark:bg-black flex justify-center items-center  dark:text-white duration-200">
       {/* خلفية */} 
       {/* <div className="absolute w-[700px] h-[700px] rotate-[40deg] top-[-300px] right-[50px] bg-red-500 opacity-30 rounded-full overflow-hidden"></div> */}
 
@@ -57,10 +57,10 @@ const Heroslider = () => {
          >
            {ImageList.map((data) => (
              <SwiperSlide key={data.id} className="w-[250px] sm:w-[300px]  lg:w-[600px]">
-               <div  data-aos="pop-up" className="flex flex-col justify-center items-center">
+               <div  data-aos="pop-up" className="flex flex-col  justify-center items-center">
                  {/* النص */}
-                 <div className="flex justify-center  items-center text-center  relative leading-6 z-10 bg-black/30 rounded-lg sm:h-[150px] lg:w-[900px] w-[250px] h-[100px]  shadow-2xl">
-                   <p className=" lg:text-2xl  sm:text-lg text-[13px] font-[Open_Sans] ... font-[500]  mx-4">{data.description}</p>
+                 <div className="flex justify-center dark:text-white dark:bg-white/40 opacity-70  items-center text-center  relative leading-6 px-3 z-10 bg-black/30 dark:bg-black rounded-e-full sm:h-[150px]  sm:w-[550px] lg:w-[900px] h-[100px]  shadow-2xl">
+                   <p className=" lg:text-2xl  sm:text-lg text-[13px] font-[Open_Sans]  font-[500]  mx-4">{data.description}</p>
                  </div>
  
                  {/* الصورة */}

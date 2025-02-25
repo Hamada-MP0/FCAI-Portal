@@ -66,16 +66,16 @@ const Library = () => {
         </SwiperSlide>
         </Swiper>
         
-        <div className="w-full bg-gray-800">
+        <div className="w-full bg-slate-400 dark:bg-gray-800">
           <div className="container mx-auto py-10">
-            <ul className='flex text-white gap-5 border-b-2'>
+            <ul className='flex dark:text-white gap-5 border-b-2'>
               <NavLink 
                 to="best_books" 
                 className={({ isActive }) => 
                   `mb-2 ml-2 transition-all duration-300 pb-1 ${
                     isActive 
-                      ? 'text-orange-400 border-b-2 border-blue-400 ' 
-                      : 'hover:text-blue-300'
+                      ? 'dark:text-orange-400 text-blue-800 border-b-2 border-blue-400 ' 
+                      : 'hover:text-red-600'
                   }`
                 }
               >
@@ -86,8 +86,8 @@ const Library = () => {
                 className={({ isActive }) => 
                   `mb-2 ml-2 transition-all duration-300 pb-1 ${
                     isActive 
-                      ? 'text-orange-400 border-b-2 border-blue-400 ' 
-                      : 'hover:text-blue-300'
+                      ? 'dark:text-orange-400 text-blue-800 border-b-2 border-blue-400 ' 
+                      : 'hover:text-red-600'
                   }`
                 }
               >
@@ -98,8 +98,8 @@ const Library = () => {
                 className={({ isActive }) => 
                   `mb-2 ml-2 transition-all duration-300 pb-1 ${
                     isActive 
-                      ? 'text-orange-400 border-b-2 border-blue-400 ' 
-                      : 'hover:text-blue-300'
+                      ? 'dark:text-orange-400 text-blue-800 border-b-2 border-blue-400 ' 
+                      : 'hover:text-red-600'
                   }`
                 }
               >

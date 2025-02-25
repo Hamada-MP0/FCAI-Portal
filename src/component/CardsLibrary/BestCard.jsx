@@ -40,7 +40,7 @@ const BestCard = ({ title, image, author, lang , id , onRemove }) => {
     <div
      
       data-aos="flip-left"
-      className={`group bg-white dark:bg-gray-800 rounded-xl overflow-hidden transform dark:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative ${
+      className={`group bg-white dark:bg-gray-800 rounded-xl overflow-hidden transform dark:shadow-2xl transition-all duration-300 hover:-translate-y-2 shadow-2xl relative ${
         isInFavoritesPage && !isFavorite ? 'animate-fadeOut' : ''
       }`}
       onMouseEnter={() => setIsHovered(true)}
