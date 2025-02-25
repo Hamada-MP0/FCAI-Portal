@@ -11,14 +11,14 @@ const Tables = () => {
   };
 
   return (
-    <div  className="w-full px-4 md:px-8 lg:px-12">
+    <div  className="w-full px-4 md:px-8 lg:px-12 dark:bg-gray-950/5">
       <CardmanagersTable data-aos="fade-down"
                         data-aos-delay={900 } isTransform={isTransform} setIsTransform={setIsTransform} Value={value} />
 
       <div data-aos="fade-left" className="relative flex rounded-3xl flex-col shadow-xl items-center justify-center mx-auto max-w-6xl">
         <div  className="w-full my-5 py-5 border-y-2  shadow-2xl rounded-3xl border-black/40  flex flex-col items-center justify-center  mx-4 sm:mx-8 lg:mx-12">
           <h1 data-aos="fade-down"
-                        data-aos-delay={900 } className="text-lg dark:bg-gray-950/90 sm:text-2xl xl:text-3xl shadow-lg text-center text-black border-b-2 tracking-wider border-black p-2 -mt-6 bg-white rounded-3xl">
+                        data-aos-delay={900 } className="text-lg dark:text-white/80 dark:bg-gray-950/20  sm:text-2xl xl:text-3xl shadow-lg text-center text-black border-b-2 tracking-wider border-black p-2 -mt-6 bg-white rounded-3xl">
             Study schedules
           </h1 >
 
@@ -28,7 +28,7 @@ const Tables = () => {
               data-aos="fade-down"
                         data-aos-delay={1000 *index}
                 key={level}
-                className="bg-black/5 shadow-2xl border-y-2 rounded-full hover:bg-black/20 transition-all border-black/40 text-black px-8 py-3"
+                className="bg-black/5 dark:text-white shadow-2xl border-y-2 rounded-full hover:bg-black/20 transition-all border-black/40 text-black px-8 py-3"
                 onClick={(e) => {
                   e.preventDefault();
                   handleTransform(level);
@@ -42,7 +42,7 @@ const Tables = () => {
 
         <div  className="w-full m-10 px-4 md:px-12 py-5 border-y-2 rounded-3xl border-black/40">
           <h1  data-aos="fade-down"
-                        data-aos-delay={ 900 } className="text-lg sm:text-2xl md:text-3xl shadow-lg text-center text-black border-b-2 tracking-wider border-black p-2 -mt-6 bg-white rounded-3xl">
+                        data-aos-delay={ 900 } className="text-lg  dark:text-white/80 dark:bg-gray-950/20  sm:text-2xl md:text-3xl shadow-lg text-center text-black border-b-2 tracking-wider border-black p-2 -mt-6 bg-white rounded-3xl">
             Important for students
           </h1>
 
@@ -53,7 +53,7 @@ const Tables = () => {
                 key={item}
                 data-aos="fade-down"
                 data-aos-delay={ 900*index*2 }
-                className="bg-black/5 shadow-2xl border-y-2 rounded-full hover:bg-black/20 transition-all border-black/40 text-black px-8 py-3"
+                className="bg-black/5 shadow-2xl dark:text-white   border-y-2 rounded-full hover:bg-black/20 transition-all border-black/40 text-black px-8 py-3"
                 onClick={(e) => {
                   e.preventDefault();
                   handleTransform(item);

@@ -40,7 +40,7 @@ const BestCard = ({ title, image, author, lang , id , onRemove }) => {
     <div
      
       data-aos="flip-left"
-      className={`group bg-white dark:bg-gray-800 rounded-xl overflow-hidden transform dark:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl relative ${
+      className={`group bg-white mt-24 dark:bg-gray-800 rounded-xl overflow-hidden transform dark:shadow-2xl transition-all duration-300 hover:-translate-y-2 shadow-2xl relative ${
         isInFavoritesPage && !isFavorite ? 'animate-fadeOut' : ''
       }`}
       onMouseEnter={() => setIsHovered(true)}
@@ -68,10 +68,10 @@ const BestCard = ({ title, image, author, lang , id , onRemove }) => {
         </p>
         
         {/* Actions Container */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center  justify-between">
           <Link 
             to={`/library/showCard/${id}`} // Update from /show_product/${id}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg transform transition-all duration-300 hover:bg-blue-700 hover:scale-105 active:scale-95"
+            className="px-4 py-2 bg-blue-600  text-white rounded-lg transform transition-all duration-300 hover:bg-blue-700 hover:scale-105 active:scale-95"
           >
             Read More
           </Link>

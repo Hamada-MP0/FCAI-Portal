@@ -18,7 +18,7 @@ const optionscard2 = [
   
   const Card4 = () => {
     return (
-      <div>
+      <div className="dark:bg-black/60">
         <section className="bg-gray-2 dark:bg-dark pt-20 pb-10 lg:pt-[120px] lg:pb-20">
           <div className="container mx-auto">
             <div className="flex flex-wrap -mx-4">
@@ -29,8 +29,8 @@ const optionscard2 = [
                   data-aos-delay={200*index }
                   className="w-full shadow-2xl md:w-1/2 xl:w-1/3 px-10"
                 >
-                  <div className="h-full flex flex-col justify-between rounded-lg border-2 shadow-2xl  border-black bg-white dark:bg-dark-2 overflow-hidden">
-                    <div className="w-full h-48 flex items-center justify-center bg-gray-100">
+                  <div className="h-full flex flex-col justify-between rounded-lg border-2 shadow-2xl  border-black dark:bg-black/30 dark:text-white/50 bg-white dark:bg-dark-2 overflow-hidden">
+                    <div className="w-full h-48 flex items-center justify-center dark:bg-black/30 bg-gray-100">
                       <img
                        data-aos="fade-down"
                        data-aos-delay={ 1200*index }
@@ -39,9 +39,9 @@ const optionscard2 = [
                         className="w-full h-full object-contain"
                       />
                     </div>
-                    <div className="p-6 px-10 flex flex-col flex-grow justify-between text-center">
+                    <div className="p-6 px-10 flex flex-col flex-grow justify-between text-center dark:bg-gray  /5">
                       <h3 data-aos="fade-down"
-                        data-aos-delay={ 900*index } className="text-dark dark:text-white text-xl font-semibold mb-4">
+                        data-aos-delay={ 900*index } className="text-dark   dark:text-white text-xl font-semibold mb-4">
                         
                         {option.category}
                       </h3>

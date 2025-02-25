@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
-
+import img from "../../assets/logo.png"
 const Login = () => {
 
    
@@ -23,9 +23,12 @@ const Login = () => {
  }, [messageVisible]);
 
   return (
-    <div>
+   <div className="2xl:grid 2xl:grid-cols-2 2xl:items-center 2xl:dark:bg-black/100   ">
 
-<section className="bg-gray-1 dark:bg-dark py-20 lg:py-[120px]">
+   <div   data-aos="zoom-in"  className=" shadow-2xl hidden 2xl:block absolute right-[20%] top-[70%]    "> 
+   <a href="#"><i className="fa-sharp-duotone hover:scale-150 transition-all duration-500 hover:text-black/80 dark:hover:text-white/10 fa-solid fa-arrow-down text-red-600 fa-2xl text-[70vh] -rotate-90 absolute w-[100px] h-[30vh]"></i></a>
+   </div>
+<section className="bg-gray-1 dark:bg-dark py-20 lg:py-[120px] dark:bg-black/100">
    <div    data-aos="fade-up"
         data-aos-delay={ 200 } className="container mx-auto">
       <div className="flex flex-wrap -mx-4 ">
@@ -76,18 +79,18 @@ const Login = () => {
            
           
         </form>
-         <div  className="shadow-2xl w-full px-4">
+         <div  className="w-full px-4">
             <div 
-               className="relative mx-auto shadow-2xl max-w-[525px] overflow-hidden rounded-lg bg-white py-16 px-10 text-center sm:px-12 md:px-[60px] dark:bg-dark-2"
+               className="relative mx-auto shadow-2xl max-w-[525px] overflow-hidden rounded-lg dark:bg-white/5 bg-white py-16 px-10 text-center sm:px-12 md:px-[60px] dark:bg-dark-2"
                >
                <div data-aos="zoom-in-down"
-                                    data-aos-delay={ 300 } className="mb-10 text-center shadow-2xl md:mb-16">
+                                    data-aos-delay={ 300 } className="mb-10 text-center  md:mb-16">
                   <a
                      href="javascript:void(0)"
                      className="mx-auto inline-block max-w-[160px]"
                      >
                   <img
-                     src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-primary.svg"
+                     src={img}
                      alt="logo"
                      />
                   </a>
@@ -121,7 +124,7 @@ const Login = () => {
                   </div>
                </form>
                <p  data-aos="zoom-in-down"
-                                    data-aos-delay={ 1200 } className=" shadow-2xl mb-6 text-base text-secondary-color dark:text-dark-7">
+                                    data-aos-delay={ 1200 } className="  dark:text-white shadow-2xl mb-6 text-base text-secondary-color dark:text-dark-7">
                   Connect With
                </p>
                <ul  className="flex justify-between mb-12 -mx-2">
@@ -196,7 +199,7 @@ const Login = () => {
                Forget Password?
                </a>
                <p    data-aos="fade-left" 
-        data-aos-delay={ 1200 } className="text-base text-body-color dark:text-dark-6">
+        data-aos-delay={ 1200 } className=" dark:text-white text-base text-body-color dark:text-dark-6">
                   <span className="pr-0.5">Not a member yet?</span>
                   <Link to="/Sigin" className="text-primary cursor-pointer hover:underline hover:text-red-600">Sign Up</Link>
 

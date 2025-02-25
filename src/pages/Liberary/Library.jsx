@@ -34,7 +34,7 @@ const Library = () => {
 
   return (
     <LibraryContext.Provider value={books}>
-      <div>
+      <div className='mt-28 dark:bg-black'>
         <Swiper
           modules={[Autoplay]}
           autoplay={{
@@ -52,7 +52,7 @@ const Library = () => {
                 <div data-aos="fade-up-right" className="absolute bottom-[20px] left-[20px] transform flex flex-col gap-5 -translate-y-1/2 text-white text-center">
                     <span className='text-5xl font-bold'>More Knowlage</span>
                     <button onClick={() => window.scrollTo({ top: 631, behavior: 'smooth' })} className='bg-blue-800 px-4 py-2 rounded-lg hover:opacity-95'>Read Now</button>
-                    </div>
+                </div>
             </div>
         </SwiperSlide>
         <SwiperSlide className=''>
@@ -61,21 +61,21 @@ const Library = () => {
                 <div data-aos="fade-up-right" className="absolute bottom-[20px] left-[20px] transform flex flex-col gap-5 -translate-y-1/2 text-white text-center">
                     <span className='text-5xl font-bold'>More Knowlage</span>
                     <button onClick={() => window.scrollTo({ top: 631, behavior: 'smooth' })} className='bg-blue-800 px-4 py-2 rounded-lg hover:opacity-95'>Read Now</button>
-                    </div>
+                </div>
             </div>
         </SwiperSlide>
         </Swiper>
         
-        <div className="w-full bg-black/90">
+        <div className="w-full bg-slate-400 dark:bg-gray-800">
           <div className="container mx-auto py-10">
-            <ul className='flex text-white gap-5 border-b-2'>
+            <ul className='flex dark:text-white gap-5 border-b-2'>
               <NavLink 
                 to="best_books" 
                 className={({ isActive }) => 
                   `mb-2 ml-2 transition-all duration-300 pb-1 ${
                     isActive 
-                      ? 'text-orange-400 border-b-2 border-blue-400 ' 
-                      : 'hover:text-blue-300'
+                      ? 'dark:text-orange-400 text-blue-800 border-b-2 border-blue-400 ' 
+                      : 'hover:text-red-600'
                   }`
                 }
               >
@@ -86,8 +86,8 @@ const Library = () => {
                 className={({ isActive }) => 
                   `mb-2 ml-2 transition-all duration-300 pb-1 ${
                     isActive 
-                      ? 'text-orange-400 border-b-2 border-blue-400 ' 
-                      : 'hover:text-blue-300'
+                      ? 'dark:text-orange-400 text-blue-800 border-b-2 border-blue-400 ' 
+                      : 'hover:text-red-600'
                   }`
                 }
               >
@@ -98,8 +98,8 @@ const Library = () => {
                 className={({ isActive }) => 
                   `mb-2 ml-2 transition-all duration-300 pb-1 ${
                     isActive 
-                      ? 'text-orange-400 border-b-2 border-blue-400 ' 
-                      : 'hover:text-blue-300'
+                      ? 'dark:text-orange-400 text-blue-800 border-b-2 border-blue-400 ' 
+                      : 'hover:text-red-600'
                   }`
                 }
               >

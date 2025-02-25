@@ -40,7 +40,7 @@ const ShowCard = () => {
    }
 
    return (
-    <div className="container mx-auto px-4 py-8 min-h-screen w-full bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+    <div className="container mt-32  mx-auto px-4 py-8 min-h-screen w-full bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
         <Link 
           to="/library" 
           className="inline-flex self-start items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
@@ -62,7 +62,7 @@ const ShowCard = () => {
           </div>
           
           {/* Content Container */}
-          <div data-aos="fade-left" className="md:w-2/3">
+          <div data-aos="fade-left"  className=" md:w-2/3">
             <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-xl transition-colors duration-300">
               <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300">
                 {book.title}

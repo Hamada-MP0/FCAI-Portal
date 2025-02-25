@@ -6,7 +6,7 @@ import CollegeCouncil from "./CollegeCouncil";
 const Cardmanagers = ({ showForm, setshowForm, Value }) => {
 
     return (
-     <div className="  relative flex justify-center   ">
+     <div className="  relative flex justify-center dark:bg-gray-950/90   ">
          
          <form className={`cardAbout ${showForm}   `}>
         <div>

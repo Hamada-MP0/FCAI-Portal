@@ -13,9 +13,10 @@ import './Maurqee.css'
 const Maurqee = () => {
   return (
     <div  data-aos="fade-right"  
-    data-aos-delay={ 600 } className="mt-24 shadow-2xl py-4 bg-black/10">
-        <div className=" shadow-2xl mb-12 text-center">
-        <h1 className=" text-4xl font-bold text-[#000000]">Our Technology Partner</h1>
+          data-aos-delay={ 600 } 
+          className=" dark:bg-slate-900 py-4 bg-black/10">
+        <div className=" mb-12 text-center">
+        <h1 className=" text-4xl dark:text-white font-bold text-[#000000]">Our Technology Partner</h1>
       </div>
 
       <div  data-aos="fade-up"  
