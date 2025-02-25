@@ -46,7 +46,7 @@ const Heroslider = () => {
              stretch: 50, // مدى تباعد الشرائح
              depth: 2000, // عمق التأثير ثلاثي الأبعاد
              modifier: 1, // التحكم في التأثير
-             slideShadows: true, // تمكين الظلال
+             slideShadows: false , // تمكين الظلال
            }}
            pagination={{ clickable: true }}
            autoplay={{ delay: 3000, disableOnInteraction: false }}
