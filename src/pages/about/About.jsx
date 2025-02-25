@@ -1,7 +1,7 @@
 import Cardmanagers from './cardHeader/Cardmanagers'; 
 import Card2 from './card2';
 import Card3 from './Card3';
-import Card4 from './Card4';
+import Card4 from "./card4"; 
 import Tables from './Tables';
 import { useState   , useMemo, useCallback} from "react";
 import Clock from'./Clock';
