@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import Login from '../sigin&Login/Login'
 const Sigin = () => {
   return (
     <div className="dark:bg-gray-950/80">
@@ -53,7 +52,7 @@ const Sigin = () => {
         data-aos-delay={ 1200 } className="mb-6 flex items-center justify-start pb-12 pl-5 font-medium md:mb-10 lg:mb-1">
               <input type="checkbox" name="checkbox" className="float-left mt-1" />
               <span data-aos="zoom-in-down"
-                                    data-aos-delay={ 200 } className="ml-4 inline-block cursor-pointer text-sm dark:text-white" for="checkbox">
+                                    data-aos-delay={ 200 } className="ml-4 inline-block cursor-pointer text-sm dark:text-white" htmlFor="checkbox">
                 I agree with the
                 <a   href="javascript:void(0);" className="font-bold">
                   Terms & Conditions

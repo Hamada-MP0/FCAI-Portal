@@ -21,15 +21,15 @@ export default defineConfig({
         theme_color: "#ffffff",
         background_color: "#ffffff",
         display: "standalone",
-        start_url: "/",
+        start_url: "/FCAI-Portal/",
         icons: [
           {
-            src: "/public/icon-192x192.png",
+            src: "/icon-192x192.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "/public/icon-512x512.png",
+            src: "/icon-512x512.png",
             sizes: "512x512",
             type: "image/png",
           },
@@ -37,4 +37,5 @@ export default defineConfig({
       },
     }),
   ],
+   base: "/FCAI-Portal/" 
 });

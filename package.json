@@ -3,11 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Hamada-MP0.github.io/FCAI-Portal/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint ."
+    "deploy": "vite build && gh-pages -d dist",
+    "lint": "eslint --fix ."
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
@@ -30,8 +32,7 @@
     "react-router-dom": "^7.1.5",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
-    "swiper": "^11.2.4",
-    "vite-plugin-pwa": "^0.21.1"
+    "swiper": "^11.2.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
@@ -48,6 +49,7 @@
     "globals": "^15.14.0",
     "postcss": "^8.5.2",
     "tailwindcss": "^3.4.17",
-    "vite": "^6.1.0"
+    "vite": "^6.1.0",
+    "vite-plugin-pwa": "^0.21.1"
   }
 }
