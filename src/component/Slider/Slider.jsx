@@ -30,7 +30,7 @@ const Heroslider = () => {
   ];
 
   return (
-    <div className="relative  min-full h-full pt-20 lg:w-[100%] sm:min-h-[800px] dark:bg-black flex justify-center items-center  dark:text-white duration-200">
+    <div className="relative  min-full h-full pt-20 mt-[-18px] lg:w-[100%] sm:min-h-[800px] dark:bg-black flex justify-center items-center  dark:text-white duration-200">
       {/* خلفية */} 
       {/* <div className="absolute w-[700px] h-[700px] rotate-[40deg] top-[-300px] right-[50px] bg-red-500 opacity-30 rounded-full overflow-hidden"></div> */}
 
